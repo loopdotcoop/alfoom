@@ -31,27 +31,50 @@
       content="Public-Alpha Oom: a bleepy, wireframey VR sequencer">
 
 <!-- From realfavicongenerator.net - see README.md for settings -->
-<link rel="apple-touch-icon" sizes="180x180" href="public/asset/icon/apple-touch.png">
-<link rel="icon" type="image/png" sizes="32x32" href="public/asset/icon/favicon32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="public/asset/icon/favicon16.png">
-<link rel="manifest"                  href="public/asset/icon/manifest.json">
-<link rel="mask-icon" color="#b100ff" href="public/asset/icon/safari-pinned-tab.svg">
-<link rel="shortcut icon"             href="public/asset/icon/favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="/build/asset/icon/apple-touch.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/build/asset/icon/favicon32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/build/asset/icon/favicon16.png">
+<link rel="manifest"                  href="/build/asset/icon/manifest.json">
+<link rel="mask-icon" color="#b100ff" href="/build/asset/icon/safari-pinned-tab.svg">
+<link rel="shortcut icon"             href="/build/asset/icon/favicon.ico">
 <meta name="apple-mobile-web-app-title" content="Alfoom">
 <meta name="application-name"           content="Alfoom">
-<meta name="msapplication-config"       content="public/asset/icon/browserconfig.xml">
+<meta name="msapplication-config"       content="/build/asset/icon/browserconfig.xml">
 <meta name="theme-color"                content="#ffffff">
 
+<!--
+  Notice the use of /build in the tags above.
+  It will be replaced with the URL of the `public` folder during the build.
+  Only files inside the `public` folder can be referenced from the HTML.
+
+  Unlike "/favicon.ico" or "favicon.ico", "/build/favicon.ico" will
+  work correctly both with client-side routing and a non-root public URL.
+  Learn how to configure a non-root public URL by running `npm run build`.
+-->
 
 </head>
 <body>
 
+<header>
+  <h2>Alfoom</h2>
+  <h4>Public-Alpha Oom: a bleepy, wireframey VR sequencer</h4>
+  by <a href="http://loop.coop/">Loop.Coop</a>
+</header>
+
 <noscript>
   You need to enable JavaScript to run this app.
 </noscript>
-<script>
-  window.location.href = 'build/index.html'
-</script>
+<div id="root"></div>
+<!--
+  This HTML file is a template.
+  If you open it directly in the browser, you will see an empty page.
+
+  You can add webfonts, meta tags, or analytics to this file.
+  The build step will place the bundled scripts into the <body> tag.
+
+  To begin the development, run `npm start` or `yarn start`.
+  To create a production bundle, use `npm run build` or `yarn build`.
+-->
 
 </body>
 </html>
