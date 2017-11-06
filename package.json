@@ -1,6 +1,6 @@
 {
   "name": "alfoom",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "dependencies": {
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
@@ -11,5 +11,6 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
-  }
+  },
+  "homepage": "."
 }
